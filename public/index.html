@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sammy (a.k.a. TheresNoTime)</title>
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="description"
+            content="A 30-something, quintessentially queer software engineer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Sammy" />
+        <meta property="og:url" content="https://www.theresnotime.co.uk" />
+        <meta
+            property="og:description"
+            content="A 30-something, quintessentially queer software engineer" />
+        <meta
+            property="og:image"
+            content="https://wd.theresnotime.io/static/t/img/embed/fox_header.png" />
+        <link href="css/base.css" rel="stylesheet" />
+        <link href="css/monokai.css" rel="stylesheet" />
+        <link href="css/overrides.css" rel="stylesheet" />
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "Person",
+                "name": "Sammy Fox",
+                "givenName": "Sammy",
+                "familyName": "Fox",
+                "jobTitle": "Software Engineer",
+                "url": "https://www.theresnotime.co.uk"
+            }
+        </script>
+        <script>
+            window.addEventListener('load', function () {
+                function swapPfp() {
+                    pfp = document.getElementById('profile-picture');
+                    if (pfp.src.includes('pfp.png')) {
+                        pfp.src = '/img/pfp_closed.png';
+                        setTimeout(() => {
+                            pfp.src = '/img/pfp.png';
+                        }, 1000);
+                    }
+                }
+                setInterval(swapPfp, 30000);
+            });
+        </script>
+        <style>
+            .buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .buttons img {
+                image-rendering: pixelated;
+                width: 88px;
+                height: 31px;
+            }
+
+            .webrings {
+                font-size: small;
+            }
+
+            .buttons-header {
+                font-size: small;
+                text-align: center;
+                margin-bottom: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="profile-picture-container">
+                <img
+                    alt="A fox emoji"
+                    id="profile-picture"
+                    src="/img/pfp.png" />
+            </div>
+            <h1 id="name">Sammy</h1>
+            <div class="metadata" id="pronouns">
+                <a href="https://en.pronouns.page/they/them">they/them</a>
+            </div>
+            <div class="metadata" id="occupation">
+                <i class="fa-solid fa-fw fa-briefcase"></i>
+                Software Engineer
+            </div>
+            <div class="metadata" id="location">
+                <i class="fa-solid fa-fw fa-location-dot"></i>
+                <a href="https://en.wikipedia.org/wiki/East_Sussex"
+                    >East Sussex, UK</a
+                >
+            </div>
+            <div id="details"></div>
+            <div id="bio">
+                <p>
+                    A 30-something, quintessentially queer software engineer™
+                    at the
+                    <a href="https://wikimediafoundation.org"
+                        >Wikimedia Foundation</a
+                    >.
+                </p>
+                <p style="margin-bottom: auto"
+                    >And yes, I <em>am</em> somewhat obsessed with foxes!</p
+                >
+                <p style="font-size: small; margin-top: auto"
+                    ><em><a href="/bio">Read more...</a></em></p
+                >
+            </div>
+            <div id="profile-items">
+                <h2 id="professional">Me, professionally</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="omg-icon omg-mediawiki"></i>
+                        </span>
+                        <a
+                            rel="me"
+                            href="https://people.wikimedia.org/~samtar/">
+                            Staff Software Engineer at WMF
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="omg-icon omg-sudomemo"></i>
+                        </span>
+                        <a href="https://wikimedia.org.uk">
+                            Wikimedia UK Board Member
+                        </a>
+                    </li>
+                </ul>
+                <h2 id="stuff">Neat stuff I've done</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <a rel="me" href="https://words.theresnotime.co.uk">
+                            I sometimes write things on my blog...
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <a href="https://www.theresnotime.co.uk/TIL">
+                            ... and I keep a list of cool things I've found
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <a href="https://www.isbetabroken.com">
+                            (Unofficial) monitoring for the Wikimedia beta
+                            cluster
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <a href="https://www.barelymarketing.com">
+                            Some
+                            <em>mostly serious</em>
+                            advice about the bare minimum marketing
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <a href="https://www.readthecitations.com">
+                            Barely concealed contempt for people who whine about
+                            Wikipedia being "unreliable"
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <a href="https://www.justusethey.com">
+                            Another minisite on using the gender-neutral
+                            singular they
+                        </a>
+                    </li>
+                </ul>
+                <h2 id="code">Code & libraries</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-python"></i>
+                        </span>
+                        <a href="https://github.com/theresnotime/jenkins-watch">
+                            Python script to poll the Jenkins API & alert for
+                            overdue jobs
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-node-js"></i>
+                        </span>
+                        <a
+                            href="https://www.npmjs.com/package/@theresnotime/ipa-to-ssml">
+                            Node package for converting IPA to valid SSML
+                            elements
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-node-js"></i>
+                        </span>
+                        <a
+                            href="https://www.npmjs.com/package/@theresnotime/ipa-validator">
+                            Node package for validating and normalizing IPA
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-php"></i>
+                        </span>
+                        <a
+                            href="https://packagist.org/packages/wikimedia/ipa-validator">
+                            Composer package for validating and normalizing IPA
+                            <em>(now under Wikimedia)</em>
+                        </a>
+                    </li>
+                </ul>
+                <h2 id="contact">Socials, profiles & contact</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        <a
+                            rel="me"
+                            title="theresnotime"
+                            href="https://github.com/theresnotime">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-mastodon"></i>
+                        </span>
+                        <a
+                            rel="me"
+                            title="@theresnotime@fox.nexus"
+                            href="https://fox.nexus/@theresnotime">
+                            Fediverse
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="omg-icon omg-matrix"></i>
+                        </span>
+                        <a
+                            rel="me"
+                            title="@theresno:matrix.org"
+                            href="https://matrix.to/#/@theresno:matrix.org">
+                            Matrix
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-discord"></i>
+                        </span>
+                        <a
+                            rel="me"
+                            title="theresnotime"
+                            href="https://discord.com/users/680822854920568834">
+                            Discord
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="omg-icon omg-xmpp"></i>
+                        </span>
+                        <a
+                            title="theresnotime@anoxinon.me"
+                            href="xmpp:theresnotime@anoxinon.me">
+                            XMPP
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </span>
+                        <a title="TheresNoTime" href="https://libera.chat">
+                            IRC (<code>TheresNoTime</code>)
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <a href="mailto:spam+web@theresnotime.co.uk"> Email </a>
+                    </li>
+                </ul>
+                <h2 id="PGP">PGP</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-brands fa-keybase"></i>
+                        </span>
+                        <a rel="me" href="https://keybase.io/theresnotime">
+                            keybase.io
+                        </a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-key"></i>
+                        </span>
+                        <a
+                            rel="me"
+                            title="Public PGP key"
+                            href="https://keybase.io/theresnotime/pgp_keys.asc?fingerprint=82c95a59064b3153613d24de875da81128c64bd0">
+                            875D A811 28C6 4BD0
+                        </a>
+                    </li>
+                </ul>
+                <h2 id="misc">Misc</h2>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a href="/disclaimers">Boring disclaimers</a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a href="/username">About my username</a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a href="/bio">A longer bio</a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a href="/name-change">My legal name has changed</a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a href="https://www.wikidata.org/wiki/Q110242813"
+                            >Q110242813</a
+                        >
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a href="/buttons">More 88x31s</a>
+                    </li>
+                    <li>
+                        <span class="fa-li">
+                            <i class="fa-solid fa-question"></i>
+                        </span>
+                        <a
+                            href="https://github.com/theresnotime/theresnotime.co.uk"
+                            >Website source</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div data-analytics="piratepx" id="analytics">
+                <img
+                    src="https://app.piratepx.com/ship?p=66e4a674-f413-4104-b8c8-dfcccd3818d9&i=index" />
+            </div>
+            <div id="footer" class="foot">
+                <p
+                    >Opinions expressed are my own,
+                    <a href="/disclaimers">etc.</a></p
+                >
+                <p>
+                    <a
+                        rel="license"
+                        href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        <img
+                            alt="Creative Commons Licence"
+                            style="border-width: 0"
+                            src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
+                    </a>
+                </p>
+                <div class="webrings"
+                    ><p
+                        ><a
+                            href="https://webring.wiki/previous?host=theresnotime.co.uk"
+                            >←</a
+                        >
+                        <a href="https://webring.wiki/">webring.wiki</a>
+                        <a
+                            href="https://webring.wiki/next?host=theresnotime.co.uk"
+                            >→</a
+                        ></p
+                    >
+                    <p>
+                        <a
+                            href="https://fediring.net/previous?host=theresnotime.co.uk"
+                            >←</a
+                        >
+                        <a href="https://fediring.net/">Fediring</a>
+                        <a
+                            href="https://fediring.net/next?host=theresnotime.co.uk"
+                            >→</a
+                        >
+                    </p>
+                </div>
+
+                <div id="buttons" class="buttons">
+                    <p class="buttons-header"
+                        ><em>These are very cool beings~</em></p
+                    >
+                    <p>
+                        <a href="https://www.theresnotime.co.uk/button.png"
+                            ><img src="/button.png" alt="TheresNoTime"
+                        /></a>
+                        <a href="https://beehive.gay"
+                            ><img
+                                src="https://beehive.gay/button.png"
+                                alt="beehive.gay badge"
+                        /></a>
+                        <a href="https://k4m1.net"
+                            ><img
+                                src="https://k4m1.net/button.gif"
+                                alt="k4m1.net badge"
+                        /></a>
+                        <a href="https://seirdy.one"
+                            ><img
+                                src="https://seirdy.one/sticker_88x31.png"
+                                alt="seirdy.one badge"
+                        /></a>
+                        <a href="https://vea.st"
+                            ><img
+                                src="https://vea.st/button.png"
+                                alt="vea.st badge"
+                        /></a>
+                        <a href="https://xaselgio.net"
+                            ><img
+                                src="https://xaselgio.net/88x31_xaselgio.gif"
+                                alt="xaselgio.net badge"
+                        /></a>
+                        <a href="https://slonk.ing"
+                            ><img
+                                src="https://slonk.ing/img/88x31.apng"
+                                alt="slonk.ing badge"
+                        /></a>
+                        <a href="https://arch.dog"
+                            ><img
+                                src="https://arch.dog/arch.dog.png"
+                                alt="arch.dog badge"
+                        /></a>
+                        <a href="https://maia.crimew.gay"
+                            ><img
+                                src="https://maia.crimew.gay/badges/maia.crimew.gay.png"
+                                alt="maia.crimew.gay badge"
+                        /></a>
+                        <a href="https://teamakes.games"
+                            ><img
+                                src="https://teamakes.games/rsrc/img/88x31/tea.gif"
+                                alt="teamakes.games badge"
+                        /></a>
+                        <a href="https://irisnk.me"
+                            ><img
+                                src="https://irisnk.me/assets/88x31/irisnk.png"
+                                alt="irisnk.me badge"
+                        /></a>
+                        <a href="https://labyrinth.zone/yassie_j"
+                            ><img
+                                src="/img/btn/yassie_j.gif"
+                                alt="Yassie badge"
+                        /></a>
+                        <a href="https://winter.entities.org.uk"
+                            ><img
+                                src="https://winter.entities.org.uk/buttons/self.png"
+                                alt="Winter's badge"
+                        /></a>
+                        <a href="https://flufftech.net"
+                            ><img
+                                src="https://flufftech.net/button.png"
+                                alt="Rail's badge"
+                        /></a>
+                        <a href="https://awawa.neocities.org"
+                            ><img
+                                src="https://awawa.neocities.org/buttons/awawa.png"
+                                alt="Byte's badge"
+                        /></a>
+                        <a href="https://taavi.wtf"
+                            ><img
+                                src="https://taavi.wtf/img/buttons/me/taavi.png"
+                                alt="Taavi's badge"
+                        /></a>
+                        <a href="https://softkittypa.ws"
+                            ><img
+                                src="https://softkittypa.ws/assets/buttons/softkittypaws.png"
+                                alt="Lexi's badge"
+                        /></a>
+                        <a href="https://astrid.tech"
+                            ><img
+                                src="https://s3.us-west-000.backblazeb2.com/nyaabucket/a313cf12a8c46d0262c69cdf8a3accc3b6a2d159b8e1211b7abe30886a212884/astriddottech.png"
+                                alt="Astrid's badge"
+                        /></a>
+                        <a href="https://limepot.xyz"
+                            ><img
+                                src="https://limepot.xyz/assets/badges/mine/limepotxyz.gif"
+                                alt="limepot's badge"
+                        /></a>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
